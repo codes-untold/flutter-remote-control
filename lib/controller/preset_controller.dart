@@ -40,32 +40,38 @@ class PresetController extends ChangeNotifier {
     }
   }
 
+  //fetches all presets available on the engine
   void fetchAllPresets() {
     setConnectionState(ConnectionState.waiting);
     channel.sink.add(WebSocketMessages.fetchPresets);
   }
 
+  //Updates list of presets
   void setPresetList(List<Presets> list) {
     presetList.clear();
     presetList.addAll(list);
     notifyListeners();
   }
 
+  //Updates list of preset events
   void setPresetEvents(PresetEventResponseModel event) {
     presetEvents.add(event);
     notifyListeners();
   }
 
+  //Sets new index for currently selected preset
   void setSelectedPresetIndex(int index) {
     selectedPresetIndex = index;
     notifyListeners();
   }
 
+  //Sets new index for previously selected preset
   void setPreSelectedPresetIndex(int? index) {
     preSelectedPresetIndex = index;
     notifyListeners();
   }
 
+  //Sets connection state
   setConnectionState(ConnectionState state) {
     connectionState = state;
     notifyListeners();

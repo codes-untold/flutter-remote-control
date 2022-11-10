@@ -54,7 +54,8 @@ class ConnectionScreen extends StatelessWidget {
                   return ElevatedButton(
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {
-                          presetController.clearAllData(); //clear previous data
+                          presetController
+                              .clearAllData(); //Clears all previous data
                           presetController.establishConnection(controller.text);
 
                           Navigator.push(

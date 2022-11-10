@@ -13,9 +13,14 @@ class PresetListWidget extends StatelessWidget {
             itemCount: presetController.presetList.length,
             itemBuilder: ((context, index) => InkWell(
                   onTap: () {
+                    ///sets index for previously selected preset
                     presetController.setPreSelectedPresetIndex(
                         presetController.selectedPresetIndex);
+
+                    //sets index for currently selected preset
                     presetController.setSelectedPresetIndex(index);
+
+                    //registers preset for updates in the engine
                     presetController.registerPreset();
                   },
                   child: Container(

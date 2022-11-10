@@ -52,7 +52,6 @@ class _PresetScreenState extends State<PresetScreen> {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done ||
               snapshot.connectionState == ConnectionState.none) {
-            controller.setConnectionState(ConnectionState.none);
             //Returns to connection screen once WebSocket connection is closed
             showErrorToast(msg: snapshot.error.toString());
             Navigator.pop(context);
