@@ -33,6 +33,10 @@ class ConnectionScreen extends StatelessWidget {
                     if (value!.isEmpty) {
                       return 'Enter socket port url';
                     }
+
+                    if (!value.startsWith("ws://")) {
+                      return 'Enter Valid websocket port';
+                    }
                     return null;
                   },
                   decoration: const InputDecoration(
