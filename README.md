@@ -1,16 +1,20 @@
-# remote_control_test
+### Flutter Remote Control
+## Flutter App with [UnReal Engine 5](https://docs.unrealengine.com) Integration
 
-A new Flutter project.
+### Description
 
-## Getting Started
+Welcome aboard fellow developer. This Project is a flutter app Implementing networking code to communicate with the Unreal Engine 5's HTTP and WebSocket remote control features.
 
-This project is a starting point for a Flutter application.
+### Features
 
-A few resources to get you started if this is your first Flutter project:
+-   Connects to an IP address and port for an Unreal Engine Wesocker server
+-   Shows a list of Remote Control Presets available in the engine.
+-   Displays log of events for each selected preset.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Images
+
+<img alt="Connection Screen" src="https://firebasestorage.googleapis.com/v0/b/linkup-d48a3.appspot.com/o/uploads%2FScreenshot%202022-11-10%20at%2002.45.57.png?alt=media&token=c14a58dd-1d41-4344-a694-84f2162154fe" width="500"/>
+
+<img alt="Presets Screen" src="https://firebasestorage.googleapis.com/v0/b/linkup-d48a3.appspot.com/o/uploads%2FScreenshot%202022-11-10%20at%2008.45.46.png?alt=media&token=eeb93162-adae-4aab-84fb-e27482c89bdc" width="500"/>
+
