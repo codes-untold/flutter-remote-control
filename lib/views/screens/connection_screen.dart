@@ -40,6 +40,8 @@ class ConnectionScreen extends StatelessWidget {
                     return null;
                   },
                   decoration: const InputDecoration(
+                    labelText: "Websocket Address",
+                    labelStyle: TextStyle(color: Colors.white),
                     enabledBorder: OutlineInputBorder(
                       borderSide: BorderSide(color: Colors.grey, width: 0.0),
                     ),
