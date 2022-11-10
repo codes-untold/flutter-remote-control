@@ -58,7 +58,7 @@ class _PresetScreenState extends State<PresetScreen> {
           }
 
           WidgetsBinding.instance.addPostFrameCallback((_) {
-            //sets connection state
+            //Sets connection state
             controller.setConnectionState(snapshot.connectionState);
           });
 
